@@ -1,0 +1,38 @@
+{
+  "name": "@pollon/http",
+  "version": "1.0.0",
+  "description": "HTTP module implementation for the Pollon framework",
+  "main": "dist/pollon-http.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pollon-js/http.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "dev:build": "rollup -c ./build/index.js",
+    "prepublish": "npm run dev:build"
+  },
+  "keywords": [
+    "pollon",
+    "frontend",
+    "http",
+    "framework"
+  ],
+  "author": "Francesco Lasaracina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pollon-js/http/issues"
+  },
+  "homepage": "https://github.com/pollon-js/http#readme",
+  "dependencies": {
+    "@pollon/message-broker": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.2.0"
+  }
+}
